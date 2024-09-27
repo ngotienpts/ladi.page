@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        
+        <!-- end favicon -->
+        <title>Title web</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- end font -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- <script src="./lib/jquery/jquery-3.7.1.min.js"></script> -->
+    </head>
+
+    <body>
+        
+        <!-- header -->
+        <header id="header" class="header relative">
+            <div class="header-container w-wrapper shadow bg-white d-3xl-flex items-center justify-between w-1300">
+                <!-- navbar -->
+                <ul class="navbar text-gray-55 d-3xl-flex d-sm-none items-center">
+                    <li class="navbar-item active"><a href="#" class="navbar-link">Trang chủ</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">Giới thiệu</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">Liên hệ</a></li>
+                </ul>
+                <!-- end navbar -->
+
+                <!-- submenu -->
+                <div class="sub-menu flex-0 d-3xl-none d-sm-block js__subMenu">
+                    <!-- icon bar -->
+                    <div class="icon-bar js__showSubmenu px-15 py-10">
+                        <img src="./images/svg/bar.svg" alt="">
+                    </div>
+                    <!-- end icon bar -->
+                    <!-- content -->
+                    <div class="sub-menu__content">
+                        <!-- close -->
+                        <div class="sub-menu__close js__closeSubMenu">
+                            <img src="./images/svg/close-w.svg" alt="">
+                        </div>
+                        <!-- end close -->
+
+                        <div class="sub-menu__container">
+                            <!-- list -->
+                            <ul class="sub-menu__list">
+                                <!-- item -->
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Trang chủ</a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Giới thiệu</a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Liên hệ</a>
+                                </li>
+                                <!-- end item -->
+                               
+                            </ul>
+                            <!-- end list -->
+                        </div>
+                    </div>
+                    <!-- end content -->
+                    <div class="overlay js__overlay"></div>
+                </div>
+                <!-- end submenu -->
+                
+                <!-- login -->
+                <div class="login">
+                    <div class="not-logged">
+                        <button class="btn js__showPopupLogin">Đăng nhập</button>
+                        <div class="js__popupLoginContainer">
+                            <div class="content text-white js__popupLogin">
+                                <h2 class="title">
+                                    <span class="title-1 fs-48 fw-700">landi.</span>
+                                    <span class="title-2 fs-42 fw-300">page</span>
+                                </h2>
+                                <h3 class="sapo fs-32 fw-500 mt-24">Đăng nhập và bắt đầu</h3>
+                                <div class="btn-login-group">
+                                    <button class="btn btn-gg">Tiếp tục với Google</button>
+                                    <button class="btn btn-apple">Tiếp tục với Apple</button>
+                                </div>
+                                <div class="cancel fs-14 js__closePopupLogin d-3xl-flex justify-center items-center pointer w-full">Để sau</div>
+                                <p class="des mt-40 fs-14 text-center">By continuing with an account located in Vietnam, you agree to our Terms of Service and acknowledge that you have read our Privacy Policy.</p>
+                            </div>
+                            <div class="overlay js__overlay"></div>
+                        </div>
+                    </div>
+
+                    <!-- logged -->
+                    
+                    <!-- end logged -->
+
+                </div>
+                <!-- end login -->
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main id="main" class="main">
+            <!-- primary -->
+            <section class="section-primary">
+                <div class="section-primary__container w-wrapper w-1680 over-hidden relative z-10">
+                    <!-- bg -->
+                    <div class="section-primary__bg1 absolute">
+                        <img src="./images/bg_1.png" alt="">
+                    </div>
+                    <div class="section-primary__bg2 absolute">
+                        <img src="./images/bg-2.png" alt="">
+                    </div>
+                    <!-- end bg -->
+
+                    <!-- content -->
+                    <div class="section-primary__content w-820">
+                        <h1 class="title text-center">
+                            <span class="title-1 fs-48 fw-700">landi.</span>
+                            <span class="title-2 fs-42 fw-300">page</span>
+                        </h1>
+                        <div class="rate">
+                            <ul class="rate-icon d-3xl-flex items-center justify-center">
+                                <li class="rate-icon__item"><img src="./images/svg/star.svg" alt=""></li>
+                                <li class="rate-icon__item"><img src="./images/svg/star.svg" alt=""></li>
+                                <li class="rate-icon__item"><img src="./images/svg/star.svg" alt=""></li>
+                                <li class="rate-icon__item"><img src="./images/svg/star.svg" alt=""></li>
+                                <li class="rate-icon__item"><img src="./images/svg/star.svg" alt=""></li>
+                            </ul>
+                            <p class="rate-text fs-16 text-gray-66 text-center mt-20">Đang vận hành 500.000+ landing page</p>
+                        </div>
+                        <h2 class="sapo text-center text-gradient-primary fw-500">Xây dựng trang web riêng chỉ trong một phút</h2>
+
+                        <div class="action d-3xl-flex items-center bg-gradient-primary mt-40  js__showPopupLogin">
+                            <div class="action-text fs-18">
+                                <span class="text-1">trangcuaban</span>
+                                <span class="text-2">.landi.page</span>
+                            </div>
+
+                            <h3 class="action-btn text-white fs-18">Khởi tạo</h3>
+                        </div>
+                        <h4 class="text fs-16 text-gray-66 mt-20">Miễn phí, khởi tạo chỉ trong một phút</h4>
+
+                    </div>
+                    <!-- end content -->
+                </div>
+            </section>
+            <!-- end primary -->
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            
+        </footer>
+        <!-- end footer -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

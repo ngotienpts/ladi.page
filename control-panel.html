@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        
+        <!-- end favicon -->
+        <title>Title web</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- end font -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- <script src="./lib/jquery/jquery-3.7.1.min.js"></script> -->
+    </head>
+
+    <body>
+        
+        <!-- header -->
+        <header id="header" class="header relative">
+            <div class="header-container w-wrapper shadow bg-white d-3xl-flex items-center justify-between w-1300">
+                <!-- navbar -->
+                <ul class="navbar text-gray-55 d-3xl-flex d-sm-none items-center">
+                    <li class="navbar-item active"><a href="#" class="navbar-link">Trang chủ</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">Giới thiệu</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">Liên hệ</a></li>
+                </ul>
+                <!-- end navbar -->
+
+                <!-- submenu -->
+                <div class="sub-menu flex-0 d-3xl-none d-sm-block js__subMenu">
+                    <!-- icon bar -->
+                    <div class="icon-bar js__showSubmenu px-15 py-10">
+                        <img src="./images/svg/bar.svg" alt="">
+                    </div>
+                    <!-- end icon bar -->
+                    <!-- content -->
+                    <div class="sub-menu__content">
+                        <!-- close -->
+                        <div class="sub-menu__close js__closeSubMenu">
+                            <img src="./images/svg/close-w.svg" alt="">
+                        </div>
+                        <!-- end close -->
+
+                        <div class="sub-menu__container">
+                            <!-- list -->
+                            <ul class="sub-menu__list">
+                                <!-- item -->
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Trang chủ</a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Giới thiệu</a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Liên hệ</a>
+                                </li>
+                                <!-- end item -->
+                               
+                            </ul>
+                            <!-- end list -->
+                        </div>
+                    </div>
+                    <!-- end content -->
+                    <div class="overlay js__overlay"></div>
+                </div>
+                <!-- end submenu -->
+                
+                <!-- login -->
+                <div class="login">
+                    <!-- not logged -->
+                    <div class="not-logged d-3xl-none">
+                        <button class="btn js__showPopupLogin">Đăng nhập</button>
+                        <div class="js__popupLoginContainer">
+                            <div class="content text-white js__popupLogin">
+                                <h2 class="title">
+                                    <span class="title-1 fs-48 fw-700">landi.</span>
+                                    <span class="title-2 fs-42 fw-300">page</span>
+                                </h2>
+                                <h3 class="sapo fs-32 fw-500 mt-24">Đăng nhập và bắt đầu</h3>
+                                <div class="btn-login-group">
+                                    <button class="btn btn-gg">Tiếp tục với Google</button>
+                                    <button class="btn btn-apple">Tiếp tục với Apple</button>
+                                </div>
+                                <div class="cancel fs-14 js__closePopupLogin d-3xl-flex justify-center items-center pointer w-full">Để sau</div>
+                                <p class="des mt-40 fs-14 text-center">By continuing with an account located in Vietnam, you agree to our Terms of Service and acknowledge that you have read our Privacy Policy.</p>
+                            </div>
+                            <div class="overlay js__overlay"></div>
+                        </div>
+                    </div>
+                    <!-- end not logged -->
+
+                    <!-- logged -->
+                    <div class="logged d-3xl-block">
+                        <div class="logged-container relative js__dropdownContainer">
+                            <div class="logged-heading d-3xl-flex items-center js__showDropdown">
+                                <h3 class="text fs-18 fw-700 text-gradient-primary">Bảng điều khiển</h3>
+                                <div class="icon ml-16">
+                                    <img src="./images/3.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <ul class="logged-content absolute dropdownContent js__dropdownContent">
+                                <li class="logged-item"><a href="#" class="logged-link">Tài khoản</a></li>
+                                <li class="logged-item"><a href="#" class="logged-link">Thanh toán</a></li>
+                                <li class="logged-item log-out">Đăng xuất</li>
+                            </ul>
+
+                            <div class="overlay js__overlay"></div>
+                        </div>
+                    </div>
+                    <!-- end logged -->
+
+                </div>
+                <!-- end login -->
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main id="main" class="main">
+            <!-- primary -->
+            <section class="control-panel-primary">
+                <div class="control-panel-primary__container w-wrapper w-1300 over-hidden relative z-10">
+                    <div class="control-panel-primary__form bg-gradient-primary">
+                        <form action="">
+                            <div class="form-group d-3xl-flex items-center">
+                                <input type="text" class="form-input flex-1 w-full" placeholder="trangcuaban.landi.page">
+                                <button class="btn form-btn flex-0">Khởi tạo</button>
+                            </div>
+                        </form>
+                    </div>
+                    <h4 class="text fs-16 text-gray-66 mt-20">Miễn phí, khởi tạo chỉ trong một phút</h4>
+                </div>
+            </section>
+            <!-- end primary -->
+             
+            <!-- secondary -->
+            <section class="control-panel-secondary">
+                <div class="control-panel-secondary__container w-wrapper w-1300 over-hidden relative z-10">
+                    <h1 class="control-panel-secondary__heading fs-24 fw-700">Landing page</h1>
+                    
+                    <!-- list -->
+                    <div class="control-panel-secondary__list mt-40">
+                        <!-- item -->
+                        <div class="control-panel-secondary__item p-20 bg-white mb-24 d-3xl-flex">
+                            <!-- logo -->
+                             <div class="logo-field flex-0">
+                                 <div class="logo">
+                                    <a href="#"><img src="./images/image_5.png" alt=""></a>
+                                 </div>
+                             </div>
+                            <!-- end logo -->
+
+                            <!-- content -->
+                            <div class="content flex-1 pl-20">
+                                <!-- title -->
+                                <h3 class="title fw-700 fs-20">JupViec.vn: Giúp việc theo giờ chuyên nghiệp tiêu chuẩn ...</h3>
+                                <!-- end title -->
+
+                                <div class="link-web mt-16">
+                                    <a href="#" class="text-gradient-primary fw-700">jupviec.landi.page</a>
+                                </div>
+                                <div class="description fs-16 mt-16">
+                                    <p>Nhân viên giúp việc theo giờ tại JupViec được đào tạo bài bản, chuyên nghiệp, tận tâm với công việc, có đầy đủ hồ sơ, nhân thân tốt. Tìm giúp việc theo giờ ...</p>
+                                </div> 
+                                <div class="statistics d-3xl-flex items-center mt-20">
+                                    <div class="statistics-item d-3xl-flex items-center">
+                                        <img src="./images/svg/index.svg" alt="" class="statistics-icon flex-0">
+                                        <p class="statistics-text flex-1 fs-14">134 views</p>
+                                    </div>
+                                    <div class="statistics-item d-3xl-flex items-center">
+                                        <img src="./images/svg/calender.svg" alt="" class="statistics-icon flex-0">
+                                        <p class="statistics-text flex-1 fs-14">24 tháng 03 2024</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- end content -->
+
+                            <div class="action flex-0 w-30">
+                                <!-- action -->
+                                <div class="action-container d-3xl-flex items-center">
+                                    <!-- item -->
+                                    <div class="action-item action-copy fs-16 d-3xl-flex items-center pointer">
+                                        <img src="./images/svg/copy.svg" alt="" class="flex-0">
+                                        <p class="flex-1 pl-4">Copy Link</p>
+                                    </div>
+                                    <!-- end item -->
+                                    <!-- item -->
+                                    <div class="action-item action-note fs-16 d-3xl-flex items-center pointer">
+                                        <img src="./images/svg/note.svg" alt="" class="flex-0">
+                                        <p class="flex-1 pl-4">Sửa</p>
+                                    </div>
+                                    <!-- end item -->
+                                    <!-- item -->
+                                    <div class="action-item action-more relative js__dropdownContainer">
+                                        <!-- icon -->
+                                        <div class="action-item__icon js__showDropdown pointer">...</div>
+                                        <!-- end icon -->
+
+                                        <ul class="action-dropdown dropdownContent absolute js__dropdownContent">
+                                            <!-- item -->
+                                            <li class="action-dropdown__item">
+                                                <a href="#" class="action-dropdown__link d-3xl-flex items-center">
+                                                    <img src="./images/svg/link.svg" alt="" class="action-dropdown__icon flex-0">
+                                                    <p class="action-dropdown__text fs-16 flex-1 pl-4">Mở link chi tiết</p>
+                                                </a>
+                                            </li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="action-dropdown__item">
+                                                <a href="#" class="action-dropdown__link d-3xl-flex items-center">
+                                                    <img src="./images/svg/qr.svg" alt="" class="action-dropdown__icon flex-0">
+                                                    <p class="action-dropdown__text fs-16 flex-1 pl-4">Tạo QR Code</p>
+                                                </a>
+                                            </li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="action-dropdown__item">
+                                                <div class="action-dropdown__link action-dropdown__delete d-3xl-flex items-center">
+                                                    <img src="./images/svg/delete.svg" alt="" class="action-dropdown__icon flex-0">
+                                                    <p class="action-dropdown__text fs-16 flex-1 pl-4">Xóa</p>
+                                                </div>
+                                            </li>
+                                            <!-- end item -->
+                                        </ul>
+
+                                        <div class="overlay js__overlay"></div>
+                                    </div>
+                                    <!-- end item -->
+                                </div>
+                                <!-- end action -->
+                            </div>
+                            
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="control-panel-secondary__item p-20 bg-white mb-24 d-3xl-flex">
+                            <!-- logo -->
+                             <div class="logo-field flex-0">
+                                 <div class="logo">
+                                    <a href="#"><img src="./images/image_5.png" alt=""></a>
+                                 </div>
+                             </div>
+                            <!-- end logo -->
+
+                            <!-- content -->
+                            <div class="content flex-1 pl-20">
+                                <!-- title -->
+                                <h3 class="title fw-700 fs-20">JupViec.vn: Giúp việc theo giờ chuyên nghiệp tiêu chuẩn ...</h3>
+                                <!-- end title -->
+
+                                <div class="link-web mt-16">
+                                    <a href="#" class="text-gradient-primary fw-700">jupviec.landi.page</a>
+                                </div>
+                                <div class="description fs-16 mt-16">
+                                    <p>Nhân viên giúp việc theo giờ tại JupViec được đào tạo bài bản, chuyên nghiệp, tận tâm với công việc, có đầy đủ hồ sơ, nhân thân tốt. Tìm giúp việc theo giờ ...</p>
+                                </div> 
+                                <div class="statistics d-3xl-flex items-center mt-20">
+                                    <div class="statistics-item d-3xl-flex items-center">
+                                        <img src="./images/svg/index.svg" alt="" class="statistics-icon flex-0">
+                                        <p class="statistics-text flex-1 fs-14">134 views</p>
+                                    </div>
+                                    <div class="statistics-item d-3xl-flex items-center">
+                                        <img src="./images/svg/calender.svg" alt="" class="statistics-icon flex-0">
+                                        <p class="statistics-text flex-1 fs-14">24 tháng 03 2024</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- end content -->
+
+                            <div class="action flex-0 w-30">
+                                <!-- action -->
+                                <div class="action-container d-3xl-flex items-center">
+                                    <!-- item -->
+                                    <div class="action-item action-copy fs-16 d-3xl-flex items-center pointer">
+                                        <img src="./images/svg/copy.svg" alt="" class="flex-0">
+                                        <p class="flex-1 pl-4">Copy Link</p>
+                                    </div>
+                                    <!-- end item -->
+                                    <!-- item -->
+                                    <div class="action-item action-note fs-16 d-3xl-flex items-center pointer">
+                                        <img src="./images/svg/note.svg" alt="" class="flex-0">
+                                        <p class="flex-1 pl-4">Sửa</p>
+                                    </div>
+                                    <!-- end item -->
+                                    <!-- item -->
+                                    <div class="action-item action-more relative js__dropdownContainer">
+                                        <!-- icon -->
+                                        <div class="action-item__icon js__showDropdown pointer">...</div>
+                                        <!-- end icon -->
+
+                                        <ul class="action-dropdown dropdownContent absolute js__dropdownContent">
+                                            <!-- item -->
+                                            <li class="action-dropdown__item">
+                                                <a href="#" class="action-dropdown__link d-3xl-flex items-center">
+                                                    <img src="./images/svg/link.svg" alt="" class="action-dropdown__icon flex-0">
+                                                    <p class="action-dropdown__text fs-16 flex-1 pl-4">Mở link chi tiết</p>
+                                                </a>
+                                            </li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="action-dropdown__item">
+                                                <a href="#" class="action-dropdown__link d-3xl-flex items-center">
+                                                    <img src="./images/svg/qr.svg" alt="" class="action-dropdown__icon flex-0">
+                                                    <p class="action-dropdown__text fs-16 flex-1 pl-4">Tạo QR Code</p>
+                                                </a>
+                                            </li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="action-dropdown__item">
+                                                <div class="action-dropdown__link action-dropdown__delete d-3xl-flex items-center">
+                                                    <img src="./images/svg/delete.svg" alt="" class="action-dropdown__icon flex-0">
+                                                    <p class="action-dropdown__text fs-16 flex-1 pl-4">Xóa</p>
+                                                </div>
+                                            </li>
+                                            <!-- end item -->
+                                        </ul>
+
+                                        <div class="overlay js__overlay"></div>
+                                    </div>
+                                    <!-- end item -->
+                                </div>
+                                <!-- end action -->
+                            </div>
+                            
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="control-panel-secondary__item p-20 bg-white mb-24 d-3xl-flex">
+                            <!-- logo -->
+                             <div class="logo-field flex-0">
+                                 <div class="logo">
+                                    <a href="#"><img src="./images/image_5.png" alt=""></a>
+                                 </div>
+                             </div>
+                            <!-- end logo -->
+
+                            <!-- content -->
+                            <div class="content flex-1 pl-20">
+                                <!-- title -->
+                                <h3 class="title fw-700 fs-20">JupViec.vn: Giúp việc theo giờ chuyên nghiệp tiêu chuẩn ...</h3>
+                                <!-- end title -->
+
+                                <div class="link-web mt-16">
+                                    <a href="#" class="text-gradient-primary fw-700">jupviec.landi.page</a>
+                                </div>
+                                <div class="description fs-16 mt-16">
+                                    <p>Nhân viên giúp việc theo giờ tại JupViec được đào tạo bài bản, chuyên nghiệp, tận tâm với công việc, có đầy đủ hồ sơ, nhân thân tốt. Tìm giúp việc theo giờ ...</p>
+                                </div> 
+                                <div class="statistics d-3xl-flex items-center mt-20">
+                                    <div class="statistics-item d-3xl-flex items-center">
+                                        <img src="./images/svg/index.svg" alt="" class="statistics-icon flex-0">
+                                        <p class="statistics-text flex-1 fs-14">134 views</p>
+                                    </div>
+                                    <div class="statistics-item d-3xl-flex items-center">
+                                        <img src="./images/svg/calender.svg" alt="" class="statistics-icon flex-0">
+                                        <p class="statistics-text flex-1 fs-14">24 tháng 03 2024</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- end content -->
+
+                            <div class="action flex-0 w-30">
+                                <!-- action -->
+                                <div class="action-container d-3xl-flex items-center">
+                                    <!-- item -->
+                                    <div class="action-item action-copy fs-16 d-3xl-flex items-center pointer">
+                                        <img src="./images/svg/copy.svg" alt="" class="flex-0">
+                                        <p class="flex-1 pl-4">Copy Link</p>
+                                    </div>
+                                    <!-- end item -->
+                                    <!-- item -->
+                                    <div class="action-item action-note fs-16 d-3xl-flex items-center pointer">
+                                        <img src="./images/svg/note.svg" alt="" class="flex-0">
+                                        <p class="flex-1 pl-4">Sửa</p>
+                                    </div>
+                                    <!-- end item -->
+                                    <!-- item -->
+                                    <div class="action-item action-more relative js__dropdownContainer">
+                                        <!-- icon -->
+                                        <div class="action-item__icon js__showDropdown pointer">...</div>
+                                        <!-- end icon -->
+
+                                        <ul class="action-dropdown dropdownContent absolute js__dropdownContent">
+                                            <!-- item -->
+                                            <li class="action-dropdown__item">
+                                                <a href="#" class="action-dropdown__link d-3xl-flex items-center">
+                                                    <img src="./images/svg/link.svg" alt="" class="action-dropdown__icon flex-0">
+                                                    <p class="action-dropdown__text fs-16 flex-1 pl-4">Mở link chi tiết</p>
+                                                </a>
+                                            </li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="action-dropdown__item">
+                                                <a href="#" class="action-dropdown__link d-3xl-flex items-center">
+                                                    <img src="./images/svg/qr.svg" alt="" class="action-dropdown__icon flex-0">
+                                                    <p class="action-dropdown__text fs-16 flex-1 pl-4">Tạo QR Code</p>
+                                                </a>
+                                            </li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="action-dropdown__item">
+                                                <div class="action-dropdown__link action-dropdown__delete d-3xl-flex items-center">
+                                                    <img src="./images/svg/delete.svg" alt="" class="action-dropdown__icon flex-0">
+                                                    <p class="action-dropdown__text fs-16 flex-1 pl-4">Xóa</p>
+                                                </div>
+                                            </li>
+                                            <!-- end item -->
+                                        </ul>
+
+                                        <div class="overlay js__overlay"></div>
+                                    </div>
+                                    <!-- end item -->
+                                </div>
+                                <!-- end action -->
+                            </div>
+                            
+                        </div>
+                        <!-- end item -->
+                    </div>
+                    <!-- end list -->
+
+                    <div class="fs-16 text-gray-66 text-center mt-20">
+                        <span>You've reached the end of your links</span>
+                    </div>
+                </div>
+            </section>
+            <!-- end secondary -->
+
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            
+        </footer>
+        <!-- end footer -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
