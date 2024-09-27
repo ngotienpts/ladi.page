@@ -1533,6 +1533,9 @@ img {
   height: 1px;
   background: linear-gradient(90deg, #FF5858, #C058FF 100%);
 }
+.control-panel-secondary__item .statistics {
+  flex-wrap: wrap;
+}
 .control-panel-secondary__item .statistics-item {
   margin-right: 40px;
 }
