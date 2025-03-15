@@ -116,6 +116,10 @@
     .d-md-grid {
         display: grid;
     }
+    .w-md-500 {
+        max-width: 500px;
+        margin: auto;
+    }
 
 
     // --------------------------------------------------------------------header
@@ -129,14 +133,14 @@
     }
 
     // --------------------------------------------------------------------index
-     .section-primary {
+    .section-primary {
         &__content {
             .sapo {
                 font-size: 40px;
             }
         }
     }
-
+    
     .control-panel-secondary {
         &__item {
             .content {
@@ -146,9 +150,24 @@
                 padding-top: 20px;
                 flex: auto;
             }
-
+            
             .action {
                 flex: 1;
+            }
+        }
+    }
+    // --------------------------------------------------------------------news
+    .news-primary {
+        &__item {
+            flex-direction: column;
+            .article-content {
+                padding: 20px 0 0;
+                order: 2;
+            }
+
+            .article-img {
+                width: 100%;
+                order: 1;
             }
         }
     }
@@ -168,7 +187,9 @@
     .d-sm-grid {
         display: grid;
     }
-
+    .fs-sm-30 {
+        font-size: 30px;
+    }
 
     // --------------------------------------------------------------------header
     .header {
@@ -287,4 +308,61 @@
     // --------------------------------------------------------------------cate
 
     // --------------------------------------------------------------------detail
+    // --------------------------------------------------------------------detail
+    .detail-title {
+        font-size: 30px;
+    }
+    .detail-sapo {
+        font-size: 18px;
+        p {
+            font-size: 18px !important;
+        }
+    }
+    .detail-content {
+        h1 {
+            font-size: 30px;
+        }
+
+        & figure {
+            margin-bottom: 15px;
+            
+            figcaption {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+            img {
+                // border-radius: 15px;
+            }
+        }
+        
+
+        & p,
+        & li {
+            font-size: 16px;
+    
+        }
+        &  h2 {
+            font-size: 20px;
+        }
+        &  h3 {
+            font-size: 18px;
+        }
+        & h4 {
+            font-size: 16px;
+        }
+        &  h5 {
+            font-size: 16px;
+        }
+        & h6 {
+            font-size: 16px;
+        }
+    
+        & blockquote {
+            font-size: 16px;
+    
+            & p {
+                font-size: 16px;
+            }
+        }
+    }
 }

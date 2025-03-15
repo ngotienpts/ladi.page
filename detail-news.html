@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        
+        <!-- end favicon -->
+        <title>Title web</title>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- end font -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- <script src="./lib/jquery/jquery-3.7.1.min.js"></script> -->
+    </head>
+
+    <body>
+        
+        <!-- header -->
+        <header id="header" class="header relative">
+            <div class="header-container w-wrapper shadow bg-white d-3xl-flex items-center justify-between w-1300">
+                <!-- navbar -->
+                <ul class="navbar text-gray-55 d-3xl-flex d-sm-none items-center">
+                    <li class="navbar-item active"><a href="#" class="navbar-link">Trang chủ</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">Giới thiệu</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">Liên hệ</a></li>
+                </ul>
+                <!-- end navbar -->
+
+                <!-- submenu -->
+                <div class="sub-menu flex-0 d-3xl-none d-sm-block js__subMenu">
+                    <!-- icon bar -->
+                    <div class="icon-bar js__showSubmenu px-15 py-10">
+                        <img src="./images/svg/bar.svg" alt="">
+                    </div>
+                    <!-- end icon bar -->
+                    <!-- content -->
+                    <div class="sub-menu__content">
+                        <!-- close -->
+                        <div class="sub-menu__close js__closeSubMenu">
+                            <img src="./images/svg/close-w.svg" alt="">
+                        </div>
+                        <!-- end close -->
+
+                        <div class="sub-menu__container">
+                            <!-- list -->
+                            <ul class="sub-menu__list">
+                                <!-- item -->
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Trang chủ</a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Giới thiệu</a>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="sub-menu__item">
+                                    <a href="#" class="sub-menu__link">Liên hệ</a>
+                                </li>
+                                <!-- end item -->
+                               
+                            </ul>
+                            <!-- end list -->
+                        </div>
+                    </div>
+                    <!-- end content -->
+                    <div class="overlay js__overlay"></div>
+                </div>
+                <!-- end submenu -->
+                
+                <!-- login -->
+                <div class="login">
+                    <!-- not logged -->
+                    <div class="not-logged d-3xl-none">
+                        <button class="btn js__showPopupLogin">Đăng nhập</button>
+                        <div class="js__popupLoginContainer">
+                            <div class="content text-white js__popupLogin">
+                                <h2 class="title">
+                                    <span class="title-1 fs-48 fw-700">landi.</span>
+                                    <span class="title-2 fs-42 fw-300">page</span>
+                                </h2>
+                                <h3 class="sapo fs-32 fw-500 mt-24">Đăng nhập và bắt đầu</h3>
+                                <div class="btn-login-group">
+                                    <button class="btn btn-gg">Tiếp tục với Google</button>
+                                    <button class="btn btn-apple">Tiếp tục với Apple</button>
+                                </div>
+                                <div class="cancel fs-14 js__closePopupLogin d-3xl-flex justify-center items-center pointer w-full">Để sau</div>
+                                <p class="des mt-40 fs-14 text-center">By continuing with an account located in Vietnam, you agree to our Terms of Service and acknowledge that you have read our Privacy Policy.</p>
+                            </div>
+                            <div class="overlay js__overlay"></div>
+                        </div>
+                    </div>
+                    <!-- end not logged -->
+
+                    <!-- logged -->
+                    <div class="logged d-3xl-block">
+                        <div class="logged-container relative js__dropdownContainer">
+                            <div class="logged-heading d-3xl-flex items-center js__showDropdown">
+                                <h3 class="text fs-18 fw-700 text-gradient-primary">Bảng điều khiển</h3>
+                                <div class="icon ml-16">
+                                    <img src="./images/3.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <ul class="logged-content absolute dropdownContent js__dropdownContent">
+                                <li class="logged-item"><a href="#" class="logged-link">Tài khoản</a></li>
+                                <li class="logged-item"><a href="#" class="logged-link">Thanh toán</a></li>
+                                <li class="logged-item log-out">Đăng xuất</li>
+                            </ul>
+
+                            <div class="overlay js__overlay"></div>
+                        </div>
+                    </div>
+                    <!-- end logged -->
+
+                </div>
+                <!-- end login -->
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main id="main" class="main">
+        
+            <!-- primary -->
+            <section class="detail-primary">
+                <div class="detail-primary__container w-wrapper w-820 w-md-500 over-hidden relative z-10">
+                    <div class="detail-content">
+                        <!-- detail title -->
+                        <h1 class="detail-title text-center">
+                            Xây dựng bộ dữ liệu tiếng Việt mã nguồn mở phục vụ AI
+                        </h1>
+                        <!-- end detail title -->
+
+                        <!-- author top -->
+                        <div class="detail-time-publish texzxt-gray-55 fs-16 py-20 d-3xl-flex items-center justify-center">
+                            <p>15/03/2025 15:30</p>
+                        </div>
+                        <!-- end author top -->
+
+                        <!-- detail sapo -->
+                        <div class="detail-sapo font-noto">
+                            <p>Hiểu là một động từ diễn đạt hành động của sự tiếp cận, nhận diện, nắm bắt về mặt ý nghĩa, bản chất, lý lẽ của một hiện tượng, sự vật, sự việc nào đó.</p>
+                        </div>
+                        <!-- end detail sapo -->
+                        <div id="explus-editor" class="font-noto">
+                            <figure class="expNoEdit">
+                                <a data-fancybox="gallery" href="./images/2.jpg" data-caption="VNG từng dự kiến IPO tại Mỹ. Ảnh Vneconomy">
+                                    <img src="./images/2.jpg" alt="">
+                                  </a>
+                                  <figcaption>
+                                    <h2 class="expEdit">
+                                        Ảnh minh hoạ. Nguồn: Internet
+                                    </h2>
+                                </figcaption>
+                            </figure>
+                            <p>Từ xưa, hình tượng Đức Phật đã là chủ đề trung tâm của nghệ thuật tạo hình Phật giáo trong phong thủy, người Phật tử luôn cần có hình ảnh Ngài để chiêm ngưỡng, đảnh lễ, cúng dường và noi gương. Phải kể đến những hình ảnh quen thuộc như tượng Phật Quan Âm, tượng Phật Di Lặc, tượng Phật Thiên Thủ Thiên Nhãn, tượng Phật Chuẩn Đề,…Tuy nhiên, rất nhiều Phật tử nhầm lẫn giữa hình tượng hai vị Bồ Tát: Chuẩn Đề và Phật Quan Âm Thiên Thủ Thiên Nhãn.</p>
+                            <p>Dựa trên những kiến thức về Phật giáo, Vật phẩm Phật giáo xin chia sẻ những thông tin và cách phân biệt hai mẫu tượng Phật Chuẩn Đề, tượng Phật Thiên Thủ Thiên Nhãn chính xác nhất.</p>
+                            <h2>1. Sự khác nhau về hình tướng</h2>
+                            <p> Thiên Thủ Thiên Nhãn Bồ tát và Chuẩn Đề Bồ tát là hai vị Bồ tát có hình tướng khá tương tự nhau, nếu không hiểu rõ về các Ngài thì rất dễ bị nhầm lẫn. Nhiều người còn cho rằng Thiên Thủ Thiên Nhãn Bồ tát và Chuẩn Đề Bồ tát là một, thế nhưng đây là hai vị Bồ tát khác nhau, chỉ có hình tượng được mô tả khá giống nhau mà thôi.</p>
+                            <h3 id="detail-el-1">Về phần đầu</h3>
+                            <p>Tôn tượng Thiên thủ Thiên Nhãn có khuôn mặt đầy đặn, cân đối, mặt tròn, mắt mở 3/4 nhìn xuống, mũi thon thẳng, miệng nhỏ, cổ cao, tóc buông sau lưng, Ngài đội mũ được trang trí cầu kỳ, tinh tế. Phần đầu của Ngài có 11 khuôn mặt, tượng trưng cho 11 quả vị giác ngộ, các khuôn mặt trên tôn tượng được sắp xếp theo 5 tầng, biểu trưng cho ngũ trí Phật. Gồm: Phần trên cùng là tượng trưng của Pháp thân - Đức Phật A Di Đà, biểu tượng cho chính đẳng giác; Tầng thứ hai là Báo Thân - Đức Kim Cương Thủ, biểu thị cho tướng phẫn nộ chính, tức Bất không thành tựu Phật ở Phương Nam; Ba tầng dưới cùng là biểu tượng của Hoá thân, tương ứng với 9 đầu còn lại. Ngài có 9 khuôn mặt: 3 khuôn mặt ở giữa biểu trưng cho Đại viên cảnh trí, tức Đức Phật A Súc Bệ ở phương Đông, ba khuôn mặt này đại từ đại bi, thấy chúng sinh làm thiện mà sinh tâm an lạc. Còn 3 khuôn mặt bên phải thì biểu tượng cho năng lực thuyết pháp của Đức Phật A Di Đà ở Phương Tây. Và cuối cùng là ba khuôn mặt phía bên trái biểu thị cho sự bình đẳng tính trí, hàng phục ngã ác của đức Bảo Sinh Phật ở phương Nam; ba khuôn mặt này tướng phẫn nộ vì thấy chúng sinh làm ác, đồng thời để hàng phục những chúng sinh ngang cường khó độ.<a href="#">least $3 billion.</a></p>
+                            <figure class="expNoEdit">
+                                <a data-fancybox="gallery" href="./images/2.jpg" data-caption="VNG từng dự kiến IPO tại Mỹ. Ảnh Vneconomy">
+                                    <img src="./images/2.jpg" alt="">
+                                  </a>
+                                  <figcaption>
+                                    <h2 class="expEdit">
+                                        Ảnh minh hoạ. Nguồn: Internet
+                                    </h2>
+                                </figcaption>
+                            </figure>
+                            <h2 id="detail-el-2">2. Sự khác nhau về ý nghĩa hình tượng</h2>
+                            <p> Thiên Thủ Thiên Nhãn Bồ tát và Chuẩn Đề Bồ tát là hai vị Bồ tát có hình tướng khá tương tự nhau, nếu không hiểu rõ về các Ngài thì rất dễ bị nhầm lẫn. Nhiều người còn cho rằng Thiên Thủ Thiên Nhãn Bồ tát và Chuẩn Đề Bồ tát là một, thế nhưng đây là hai vị Bồ tát khác nhau, chỉ có hình tượng được mô tả khá giống nhau mà thôi.</p>
+                            <h3>Về phần đầu</h3>
+                            <p>Tôn tượng Thiên thủ Thiên Nhãn có khuôn mặt đầy đặn, cân đối, mặt tròn, mắt mở 3/4 nhìn xuống, mũi thon thẳng, miệng nhỏ, cổ cao, tóc buông sau lưng, Ngài đội mũ được trang trí cầu kỳ, tinh tế. Phần đầu của Ngài có 11 khuôn mặt, tượng trưng cho 11 quả vị giác ngộ, các khuôn mặt trên tôn tượng được sắp xếp theo 5 tầng, biểu trưng cho ngũ trí Phật. Gồm: Phần trên cùng là tượng trưng của Pháp thân - Đức Phật A Di Đà, biểu tượng cho chính đẳng giác; Tầng thứ hai là Báo Thân - Đức Kim Cương Thủ, biểu thị cho tướng phẫn nộ chính, tức Bất không thành tựu Phật ở Phương Nam; Ba tầng dưới cùng là biểu tượng của Hoá thân, tương ứng với 9 đầu còn lại. Ngài có 9 khuôn mặt: 3 khuôn mặt ở giữa biểu trưng cho Đại viên cảnh trí, tức Đức Phật A Súc Bệ ở phương Đông, ba khuôn mặt này đại từ đại bi, thấy chúng sinh làm thiện mà sinh tâm an lạc. Còn 3 khuôn mặt bên phải thì biểu tượng cho năng lực thuyết pháp của Đức Phật A Di Đà ở Phương Tây. Và cuối cùng là ba khuôn mặt phía bên trái biểu thị cho sự bình đẳng tính trí, hàng phục ngã ác của đức Bảo Sinh Phật ở phương Nam; ba khuôn mặt này tướng phẫn nộ vì thấy chúng sinh làm ác, đồng thời để hàng phục những chúng sinh ngang cường khó độ.<a href="#">least $3 billion.</a></p>
+                            
+                            
+                            <blockquote class="expNoEdit">
+                                <div class="bl expEdit">
+                                    <p>
+                                        <a class="autotag" href="#" target="_blank" rel="follow noopener">Rùa biển</a>
+                                        là loài động vật hoang dã thuộc Danh
+                                        mục nguy cấp quý, hiếm được ưu tiên
+                                        bảo vệ theo Nghị định số
+                                        64/2019/NĐ-CP ngày 16/7/2019 của
+                                        Chính phủ và Điều 244 Bộ luật Hình
+                                        sự Việt Nam. Tại Bà Rịa - Vũng Tàu,
+                                        rùa biển chỉ tập trung, sinh sống và
+                                        đang được bảo tồn ở vùng biển huyện
+                                        Côn Đảo. Rùa biển tại Côn Đảo thuộc
+                                        diện bảo tồn thường được gắn chip ở
+                                        dưới vây để theo dõi.
+                                    </p>
+                                </div>
+                            </blockquote>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- end primary -->
+
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            
+        </footer>
+        <!-- end footer -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>

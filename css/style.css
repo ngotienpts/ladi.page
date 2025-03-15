@@ -1594,19 +1594,158 @@ img {
   display: block;
 }
 
+.news-primary {
+  padding: 60px 0;
+}
+
+.detail-primary {
+  padding: 60px 0;
+}
+
+.detail-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.detail-sapo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+.detail-sapo p {
+  font-weight: bold;
+  font-size: 20px !important;
+}
+
+.detail-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.detail-content figure {
+  margin-bottom: 1.25rem;
+}
+.detail-content figure img {
+  width: 100%;
+  height: auto !important;
+  margin: auto;
+}
+.detail-content figure figcaption {
+  background: #e9e9e9;
+  padding: 0.625rem 0.9375rem;
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  line-height: 1.25rem;
+  color: #555;
+}
+.detail-content figure figcaption em {
+  font-style: italic;
+}
+.detail-content figure h2,
+.detail-content figure h3,
+.detail-content figure h4,
+.detail-content figure h5,
+.detail-content figure h6,
+.detail-content figure p {
+  font-weight: normal !important;
+  font-size: 14px !important;
+  margin: 0 auto;
+  line-height: 1.3 !important;
+  color: #555;
+}
+.detail-content p a {
+  color: #008cd9;
+  font-style: italic;
+}
+.detail-content p a:hover {
+  text-decoration: underline;
+}
+.detail-content p, .detail-content li {
+  font-size: 16px;
+  margin-bottom: 18px;
+  line-height: 160%;
+  word-break: break-word;
+  color: #333;
+}
+.detail-content ul {
+  padding-left: 30px;
+}
+.detail-content ul li {
+  list-style: disc;
+}
+.detail-content h2, .detail-content h3, .detail-content h4, .detail-content h5, .detail-content h6 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #181E23;
+}
+.detail-content h2 {
+  font-size: 24px;
+}
+.detail-content h3 {
+  font-size: 22px;
+}
+.detail-content h4 {
+  font-size: 20px;
+}
+.detail-content h5 {
+  font-size: 18px;
+}
+.detail-content h6 {
+  font-size: 16px;
+}
+.detail-content blockquote {
+  background-color: #e9e9e9;
+  padding: 18px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.detail-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+.detail-content blockquote a {
+  text-decoration: underline;
+}
+.detail-content table {
+  width: 100%;
+  margin: 20px 0;
+  background: #fff;
+  overflow: hidden;
+}
+.detail-content table tr {
+  border-bottom: 1px solid;
+}
+.detail-content table th {
+  padding: 15px;
+  font-size: 15px;
+  border-bottom: 1px solid;
+}
+.detail-content table th strong {
+  color: #993333;
+}
+.detail-content table td {
+  padding: 15px;
+  font-size: 15px;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+.detail-content table td strong {
+  color: #993333;
+}
+
 @media (max-width: 1536px) {
   .d-2xl-none {
     display: none;
   }
-
   .d-2xl-block {
     display: block;
   }
-
   .d-2xl-flex {
     display: flex;
   }
-
   .d-2xl-grid {
     display: grid;
   }
@@ -1615,23 +1754,18 @@ img {
   .d-xl-none {
     display: none;
   }
-
   .d-xl-block {
     display: block;
   }
-
   .d-xl-flex {
     display: flex;
   }
-
   .d-xl-grid {
     display: grid;
   }
-
   .w-1680 {
     max-width: 1280px;
   }
-
   .section-primary__bg1 img, .section-primary__bg2 img {
     width: 250px;
   }
@@ -1646,19 +1780,15 @@ img {
   .d-lg-none {
     display: none;
   }
-
   .d-lg-block {
     display: block;
   }
-
   .d-lg-flex {
     display: flex;
   }
-
   .d-lg-grid {
     display: grid;
   }
-
   .header {
     padding-top: 0;
   }
@@ -1666,12 +1796,10 @@ img {
     border-radius: 0;
     border: none;
   }
-
   .login .not-logged .content {
     max-width: 700px;
     padding: 64px 40px;
   }
-
   .section-primary__bg1, .section-primary__bg2 {
     display: none;
   }
@@ -1680,28 +1808,26 @@ img {
   .d-md-none {
     display: none;
   }
-
   .d-md-block {
     display: block;
   }
-
   .d-md-flex {
     display: flex;
   }
-
   .d-md-grid {
     display: grid;
   }
-
+  .w-md-500 {
+    max-width: 500px;
+    margin: auto;
+  }
   .login .not-logged .content {
     max-width: 600px;
     padding: 40px;
   }
-
   .section-primary__content .sapo {
     font-size: 40px;
   }
-
   .control-panel-secondary__item .content {
     order: 2;
     width: 100%;
@@ -1712,28 +1838,37 @@ img {
   .control-panel-secondary__item .action {
     flex: 1;
   }
+  .news-primary__item {
+    flex-direction: column;
+  }
+  .news-primary__item .article-content {
+    padding: 20px 0 0;
+    order: 2;
+  }
+  .news-primary__item .article-img {
+    width: 100%;
+    order: 1;
+  }
 }
 @media (max-width: 640px) {
   .d-sm-none {
     display: none;
   }
-
   .d-sm-block {
     display: block;
   }
-
   .d-sm-flex {
     display: flex;
   }
-
   .d-sm-grid {
     display: grid;
   }
-
+  .fs-sm-30 {
+    font-size: 30px;
+  }
   .header-container {
     height: 60px;
   }
-
   .login .not-logged .content {
     max-width: calc(100% - 40px);
     padding: 20px;
@@ -1763,7 +1898,6 @@ img {
   .login .logged-item {
     font-size: 14px;
   }
-
   .section-primary__content .rate {
     padding-top: 40px;
   }
@@ -1780,7 +1914,6 @@ img {
 .section-primary__content .action-btn {
     font-size: 14px;
   }
-
   .control-panel-primary__form .form-input {
     font-size: 15px;
   }
@@ -1790,7 +1923,6 @@ img {
   .control-panel-primary .text {
     font-size: 14px;
   }
-
   .control-panel-secondary__item {
     padding: 15px;
   }
@@ -1803,6 +1935,49 @@ img {
   }
   .control-panel-secondary__item .action-item {
     font-size: 14px;
+  }
+  .detail-title {
+    font-size: 30px;
+  }
+  .detail-sapo {
+    font-size: 18px;
+  }
+  .detail-sapo p {
+    font-size: 18px !important;
+  }
+  .detail-content h1 {
+    font-size: 30px;
+  }
+  .detail-content figure {
+    margin-bottom: 15px;
+  }
+  .detail-content figure figcaption {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  .detail-content p, .detail-content li {
+    font-size: 16px;
+  }
+  .detail-content h2 {
+    font-size: 20px;
+  }
+  .detail-content h3 {
+    font-size: 18px;
+  }
+  .detail-content h4 {
+    font-size: 16px;
+  }
+  .detail-content h5 {
+    font-size: 16px;
+  }
+  .detail-content h6 {
+    font-size: 16px;
+  }
+  .detail-content blockquote {
+    font-size: 16px;
+  }
+  .detail-content blockquote p {
+    font-size: 16px;
   }
 }
 
